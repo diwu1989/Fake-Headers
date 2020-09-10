@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setup(
     name="fake-headers",
-    version="1.0.2",
+    version="1.0.2-dw",
     author="TheDevFromKer",
     license="MIT",
     description="Package for generate headers to http requests.",
@@ -20,5 +20,5 @@ setup(
         "Operating System :: OS Independent",
     ],
     include_package_data=True,
-    install_requires=["bs4", "html5lib"]
+    tests_require=["bs4", "html5lib"]
 )

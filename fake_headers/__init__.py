@@ -1,6 +1,6 @@
 from fake_headers.browsers import chrome, firefox, opera, random_browser
-from fake_headers.platforms import linux, macos, random_os, windows
 from fake_headers.headers import make_header
+from fake_headers.platforms import linux, macos, random_os, windows
 
 
 class Headers:

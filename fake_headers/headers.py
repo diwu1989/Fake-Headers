@@ -30,16 +30,6 @@ def make_header() -> dict:
             'Upgrade-Insecure-Requests': '1'
         })
 
-    if bool(rint(0, 1)):
-        ip = ("2001:cafe:" +
-              ":".join(("%x" % random.randint(0, 16**4) for i in range(6))))
-    else:
-        ip = '.'.join('%s'%random.randint(0, 255) for i in range(4))
-
-    headers.update({
-        'X-Forwarded-For': ip
-    })
-
     headers.update({
         'Referer': 'https://%s' % random.choice(REFERERS)
     })
@@ -51,7 +41,7 @@ def make_header() -> dict:
 
     return headers
 
-REFERERS = [
+REFERERS = (
     'www.google.com', 'youtube.com', 'apple.com', 'www.blogger.com',
     'microsoft.com', 'docs.google.com', 'play.google.com',
     'support.google.com', 'maps.google.com', 'plus.google.com',
@@ -179,4 +169,4 @@ REFERERS = [
     'gooyaabitemplates.com', 'ebay.co.uk', 'intel.com', 'apnews.com',
     'dribbble.com', 'bp0.blogger.com', 'chron.com', 'wiktionary.org',
     'plos.org', 'marriott.com', 'marketwatch.com', 'viagens.com.br',
-    'com.com', 'newyorker.com', 'gamespot.com', 'khanacademy.org']
+    'com.com', 'newyorker.com', 'gamespot.com', 'khanacademy.org')

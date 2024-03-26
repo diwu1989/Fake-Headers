@@ -9,7 +9,7 @@ setup(
     author="TheDevFromKer",
     license="MIT",
     description="Package for generate headers to http requests.",
-    url="https://github.com/TheDevFromKer/Fake-Headers",
+    url="https://github.com/diwu1989/Fake-Headers",
     packages=[str('fake_headers')],
     long_description=README,
     long_description_content_type="text/markdown",

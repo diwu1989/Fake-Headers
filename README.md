@@ -22,7 +22,7 @@ from fake_headers import Headers
 if __name__ == "__main__":
     header = Headers(
         browser="chrome",  # Generate only Chrome UA
-        os="win",  # Generate ony Windows platform
+        os="win",  # Generate only Windows platform
         headers=True  # generate misc headers
     )
 
